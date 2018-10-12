@@ -34,18 +34,18 @@ contactsCount++;
             System.out.println(contacts[i].getName()+" "+contacts[i].getPhoneNumber()+" "+contacts[i].getHolidayDestinatio());
         }
     }
-   public int frequentNumber(){
-        int mostmatches=0;
-        for(int i=0;i<contactsCount;i++){
-            int matches=0;
-            for (Contact mcontact:contacts){
-                if(contacts[i].getHolidayDestinatio()==mcontact.getHolidayDestinatio()){
-                    matches++;
-                }
-            }
-            if(matches>mostmatches)
-                mostmatches=matches;
-        }
-        return mostmatches;
-   }
+ //  public int frequentNumber(){
+   //     int mostmatches=0;
+     //   for(int i=0;i<contactsCount;i++){
+       //     int matches=0;
+         //   for (Contact mcontact:contacts){
+           //     if(contacts[i].getHolidayDestinatio()==mcontact.getHolidayDestinatio()){
+             //       matches++;
+              //  }
+            //}
+            //if(matches>mostmatches)
+              //  mostmatches=matches;
+        //}
+        //return mostmatches;
+   //}
 }

@@ -26,12 +26,13 @@ Input(){
     System.out.println("please enter the name you want to search detail about");
     searchname=scanner.next();
     Contact searced=contactManager.searchContact(searchname);
+    if(searced!=null){
     System.out.println("please enter to choose what happens\n1.searched name number \n2.searched name destination");
     int enter=scanner.nextInt();
     switch (enter){
         case 1:System.out.println(searced.getPhoneNumber());break;
         case 2:System.out.println(searced.getHolidayDestinatio());break;
-        default:System.out.println("invalid argument");break;}
+        default:System.out.println("invalid argument");break;}}
     contactManager.printingFull();
     int most=contactManager.frequentNumber();
     System.out.println(most);
